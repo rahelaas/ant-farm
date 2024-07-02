@@ -15,8 +15,9 @@ func main() {
 	ants := preparation.NumAnts(textSlice)
 
 	roomConnections, start, end, rooms := preparation.FindRoomsTunnels(textSlice)
-
+	
 	allPaths := preparation.AllPossiblePaths(start, start, end, roomConnections)
+	
 	if len(allPaths) < 1 {
 		fmt.Println("ERROR: No valid paths found!")
 		os.Exit(1)
@@ -25,9 +26,9 @@ func main() {
 		fmt.Println(string)
 	}
 	fmt.Println()
-	
-	sortedPaths := preparation.SortByLength(allPaths)
 
+	sortedPaths := preparation.SortByLength(allPaths)
+	
 	noStartEndpaths := preparation.RemoveStartEnd(sortedPaths)
 
 	allCombinationIndexes, allCombinations := pathConnections.PathCombinations(noStartEndpaths)

@@ -1,9 +1,27 @@
-# Lem-in
-Digital version of an ant farm.
+# Ant-farm 
+(original name Lem-in)
+
+## Objectives
+This project is a digital version of an ant farm. It was part of the projects in the Golang module.
+
+The program lem-in reads from a file (describing the ants and the colony) given in the arguments.
+
+Upon successfully finding the quickest path, lem-in will display the content of the file passed as argument and each move the ants make from room to room.
+
+[Full description of the task](https://github.com/01-edu/public/tree/master/subjects/lem-in)
+
+
+**How does it work?**
+
+The ant farm is made with tunnels and rooms.
+You place the ants on one side and look at how they find the exit.
+
 
 It finds the best possible way for ants to get from start to end. 
 ## How to run
-To run the program type in terminal:
+To run the program it is necessary to first download Golang.
+
+**Command line commands:**
 
 >`./test.sh` - to test out all files
 
@@ -35,6 +53,6 @@ L4-1
 
 ### Authors
 
-* Rahel Aasrand @rahela
-* Kaspars Spare @kaspars
-* Kerli Zirk @kerlz 
+* @rahela
+* @kaspars
+* @kerlz 

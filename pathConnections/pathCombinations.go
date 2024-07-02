@@ -1,6 +1,8 @@
 package pathConnections
 
-import "math"
+import (
+	"math"
+)
 
 // we send in the all possible paths without start and end and look for unique, non-overlapping combinations
 func PathCombinations(removedStartEndPaths [][]int) ([][]int, [][]int) {
@@ -42,6 +44,7 @@ func ComparePaths(comb []int, add []int) bool {
 	}
 	return true
 }
+
 // here we find the fastest combination of all possible combnations depending on the number of ants
 func FastestCombo(combinations [][]int, combinationIndexs [][]int, paths [][]int, ants int) [][]int {
 	var fastestComb [][]int
